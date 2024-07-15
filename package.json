@@ -1,0 +1,23 @@
+{
+  "name": "client",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "turbo dev",
+    "dev:web": "turbo dev:web",
+    "dev:android": "turbo dev:android",
+    "dev:ios": "turbo dev:ios",
+    "check-deps": "check-dependency-version-consistency .",
+    "clean": "git clean -xdf -e .idea"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.8.3",
+    "check-dependency-version-consistency": "^4.1.0",
+    "turbo": "^2.0.6",
+    "typescript": "~5.3.3"
+  },
+  "workspaces": ["./apps/*", "./packages/*"],
+  "packageManager": "yarn@1.22.22",
+  "dependencies": {},
+  "trustedDependencies": ["@biomejs/biome"]
+}

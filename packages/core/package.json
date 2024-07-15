@@ -1,0 +1,12 @@
+{
+  "name": "@acme/core",
+  "version": "0.0.1",
+  "private": true,
+  "types": "./src",
+  "main": "src/index.tsx",
+  "module:jsx": "src",
+  "files": ["types", "dist"],
+  "scripts": {},
+  "dependencies": { "react-native-mmkv": "^2.12.2", "zustand": "^4.5.4" },
+  "devDependencies": {}
+}
